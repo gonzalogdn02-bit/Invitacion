@@ -87,16 +87,45 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
     }
   }
 
-  /* Ajusta los márgenes en el celular para que entren las flores */
+  /* Margen lateral en celular para mostrar las flores en todo el largo */
   @media (max-width: 768px) {
-    body {
-      padding-left: 20px !important;
-      padding-right: 20px !important;
+    .elementor-22 {
+      padding-left: 25px !important;
+      padding-right: 25px !important;
       box-sizing: border-box !important;
     }
     iframe {
       max-width: 100% !important;
     }
+  }
+
+  /* Centrado del Formulario */
+  .elementor-element-22fa846 {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .elementor-element-22fa846 iframe {
+    margin: 0 auto !important;
+  }
+
+  /* Centrado de Código de Vestimenta */
+  .e-c266885-4b2a144, .e-a5fd39c-56025ef, .elementor-element-c0e51c3 {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  .elementor-element-c0e51c3 .elementor-widget-container {
+    text-align: center !important;
+  }
+
+  /* Ajustes a la Cuenta Regresiva */
+  .tickcounter {
+    font-family: "Cinzel", serif !important;
+  }
+  /* Ocultar insignia/logo de la cuenta regresiva */
+  .elementor-element-2b80743 {
+    overflow: hidden !important;
+    position: relative !important;
   }
 </style>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></head>
@@ -238,7 +267,6 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
     display: flex;
     align-items: center;
     font-family: 'Great Vibes', cursive;
-    /* Tamaño reducido para que encaje perfecto */
     font-size: 24px; 
     font-weight: normal;
     color: #2b1d0c;
@@ -265,7 +293,6 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
   .wax-left {
     border-radius: 36px 0 0 36px;
     border-right: 1px solid rgba(0,0,0,0.2);
-    /* Centrado absoluto en su mitad */
     justify-content: center;
     padding-right: 0;
     text-shadow: 0 1px 1px rgba(255,255,255,0.7), 0 -1px 1px rgba(0,0,0,0.5);
@@ -274,7 +301,6 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
   .wax-right {
     border-radius: 0 36px 36px 0;
     border-left: 1px solid rgba(255,255,255,0.6);
-    /* Centrado absoluto en su mitad */
     justify-content: center;
     padding-left: 0;
     text-shadow: 0 1px 1px rgba(255,255,255,0.7), 0 -1px 1px rgba(0,0,0,0.5);
@@ -370,7 +396,6 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
     
     wrapper.classList.add("is-breaking");
     
-    // Retraso de 1,5 segundos para apreciar la ruptura del sello
     setTimeout(function() {
       wrapper.classList.add("is-open");
       setTimeout(prepararAnimacionesAutomaticas, 500);
