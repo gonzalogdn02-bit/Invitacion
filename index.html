@@ -144,13 +144,26 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
     text-align: center !important;
   }
 
-  /* Ajustes a la Cuenta Regresiva */
-  .tickcounter {
-    font-family: "Cinzel", serif !important;
-  }
+  /* --- AJUSTES A LA CUENTA REGRESIVA --- */
   .elementor-element-2b80743 {
     overflow: hidden !important;
     position: relative !important;
+    padding-top: 15px !important;
+    padding-bottom: 25px !important;
+    min-height: 140px !important;
+  }
+
+  .tickcounter {
+    font-family: "Cinzel", serif !important;
+    padding-bottom: 22% !important; /* Da más espacio vertical para evitar cortes */
+  }
+
+  /* Cambia el color rojo de los segundos por azul clarito */
+  .tickcounter [style*="color: red"],
+  .tickcounter [style*="color:red"],
+  .tickcounter [style*="color: #ff"],
+  .tickcounter [style*="color:#f"] {
+    color: #2196F3 !important;
   }
 </style>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></head>
